@@ -6,7 +6,9 @@ Separate native Modded Shop with real registered item purchases.
 
 Install [Moon Sweepers Mod Loader](https://github.com/swooping-mods/moon-sweepers-mod-loader) first.
 
-Download [shop-framework-0.2.1.msmod](content/shop-framework-0.2.1.msmod), import it with **Install mod package**, then select the mod and its required frameworks.
+Download [shop-framework-0.2.1.msmod](content/shop-framework-0.2.1.msmod), then drag and drop the `.msmod` file onto the [Moon Sweepers Mod Loader](https://github.com/swooping-mods/moon-sweepers-mod-loader) window. You can also use **Add mods…** (older loader builds: **Install mod package**).
+
+Select the mod and its required frameworks, click **Prepare files**, then **Launch**.
 
 ## Controls
 
