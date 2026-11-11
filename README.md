@@ -1,5 +1,7 @@
 # Shop Framework
 
+<img src="media/icon.png" alt="Shop Framework icon" width="128" height="128">
+
 Separate native Modded Shop with real registered item purchases.
 
 ## Install
