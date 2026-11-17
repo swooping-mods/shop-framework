@@ -23,6 +23,18 @@
         "include": "provider-config.h",
         "reason": "not present locally"
       }
+    ],
+    "patches": [
+      {
+        "workshop_revision": "40d4aba472c0aaf6afd37a972d514b8f9411cf2d",
+        "files": [
+          "mods/shop-framework/registry.h",
+          "mods/shop-framework/action.h",
+          "mods/shop-framework/tests/registry.c",
+          "mods/shop-framework/tests/action.c"
+        ],
+        "gameplay_requalified": false
+      }
     ]
   },
   "source_files": {
@@ -59,8 +71,8 @@
       "export_sha256": "3dcdcfc3548ffda8614850f7c01fd5455cbbdf550ee2d293e7cb42c517ab4c7d"
     },
     "mods/shop-framework/action.h": {
-      "source_sha256": "25cf9ab4385feca7b1e836f11337b27ea203b39b3b15ff6dde41b9fd83fa689c",
-      "export_sha256": "25cf9ab4385feca7b1e836f11337b27ea203b39b3b15ff6dde41b9fd83fa689c"
+      "source_sha256": "69b5bce5d2d67d1792e25edf60a555a1d267286e0524dc760f0a3f58ba3c3c71",
+      "export_sha256": "69b5bce5d2d67d1792e25edf60a555a1d267286e0524dc760f0a3f58ba3c3c71"
     },
     "mods/shop-framework/client.h": {
       "source_sha256": "8de5a1f8ce52efb24c8e8fafa27d1bc948346c12d172fe7c750cc0d42c81b736",
@@ -79,8 +91,8 @@
       "export_sha256": "d4604f5be7a968b598a965c76b5cf28671a62e8e83a6ed0406c1eaa2bee41845"
     },
     "mods/shop-framework/registry.h": {
-      "source_sha256": "b90464df935594ef4bba8e857fd27531ed0f8c7adf1e82d403bc2d2a83ca1e29",
-      "export_sha256": "b90464df935594ef4bba8e857fd27531ed0f8c7adf1e82d403bc2d2a83ca1e29"
+      "source_sha256": "f134418994e5474bfe8392c5cc03acd4f5a3c015a07cb93708b6f5b6f8b6d261",
+      "export_sha256": "f134418994e5474bfe8392c5cc03acd4f5a3c015a07cb93708b6f5b6f8b6d261"
     },
     "mods/shop-framework/sdk.h": {
       "source_sha256": "cb43ee8e2cce48e9d82fc1fb432395f506dbd11cb2b3f226ce53d0f2fafca7fb",
@@ -91,8 +103,8 @@
       "export_sha256": "f5363413d6e931cac9c730f251bdf872b8b92249f4fa8cb3e119016b2e6c2db2"
     },
     "mods/shop-framework/tests/action.c": {
-      "source_sha256": "8f843c98efa1b0d81f9ba48acff2ec5b8e4c54bb4375eb19df125c66f135f7e1",
-      "export_sha256": "8f843c98efa1b0d81f9ba48acff2ec5b8e4c54bb4375eb19df125c66f135f7e1"
+      "source_sha256": "a0bdbdc92453ab4d34b2a8a2e986dd948569400e7f3caddad5a2ea26d2ba82b8",
+      "export_sha256": "a0bdbdc92453ab4d34b2a8a2e986dd948569400e7f3caddad5a2ea26d2ba82b8"
     },
     "mods/shop-framework/tests/context.c": {
       "source_sha256": "6ecb84216a47ed4b19d0797233f03b24da56bdc7a91926fd3f67d3bf106fef21",
@@ -103,8 +115,8 @@
       "export_sha256": "2d589b5de3cd136230f2cf35a2a490838228d4a6b4b9a07a5d5a6b3755650208"
     },
     "mods/shop-framework/tests/registry.c": {
-      "source_sha256": "f6f193c289bbd5c8e60fd1728de5b16239b93b37eea1340d26c478708965442c",
-      "export_sha256": "f6f193c289bbd5c8e60fd1728de5b16239b93b37eea1340d26c478708965442c"
+      "source_sha256": "c397e30a15527f14fb04f7bd321524ec324d61724bc392eff51d644206f57acb",
+      "export_sha256": "c397e30a15527f14fb04f7bd321524ec324d61724bc392eff51d644206f57acb"
     },
     "mods/shop-framework/tests/title-lifetime.c": {
       "source_sha256": "87047e085cc994a276b923631ac986222ec516ba86725506a7fb0f9b31cbe81f",

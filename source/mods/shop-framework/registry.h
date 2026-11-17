@@ -27,7 +27,10 @@ static const MoonShopDefinition *ms_get(unsigned index){return index<ms_count_va
 static unsigned ms_state(const char *key,void *world,void *walker){const MoonShopDefinition *d=ms_find(key);return d&&world&&walker?d->state(world,walker)&(MS_AVAILABLE|MS_OWNED|MS_BLOCKED):0;}
 static int ms_purchase(const char *key,void *world,void *walker){
     const MoonShopDefinition *d=ms_find(key);if(!d||!world||!walker||ms_purchasing)return 0;
-    unsigned state=ms_state(key,world,walker);if(!(state&MS_AVAILABLE)||(state&(MS_OWNED|MS_BLOCKED)))return 0;
-    ms_purchasing=1;int result=d->purchase(world,walker);ms_purchasing=0;return result;
+    /* Availability is provider code too; it must not start a nested debit. */
+    ms_purchasing=1;int result=0;
+    unsigned state=ms_state(key,world,walker);
+    if((state&MS_AVAILABLE)&&!(state&(MS_OWNED|MS_BLOCKED)))result=d->purchase(world,walker);
+    ms_purchasing=0;return result;
 }
 #endif

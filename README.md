@@ -11,6 +11,8 @@ Separate native Modded Shop with real registered item purchases.
 Source version **0.2.1** is saved from workshop revision `ca32bbf79ce0840d5166a232bdb3a9fdcd761254`. The retained installable payload remains **0.2.1** with its original bytes. This source update does not rebuild or requalify that payload. The current source and metadata define the candidate; gameplay, rendered behavior and co-op remain unqualified for rebuilt bytes.
 
 The exported test sources have deferred generated harness includes; their fixture closure is incomplete and they are not qualified executable tests. See `provenance.json` for the exact missing include identities.
+
+Review source patch from workshop `40d4aba472c0aaf6afd37a972d514b8f9411cf2d` updates only the files listed in `provenance.json` patches; other source retains the base revision above. The bounded source patch guards provider availability against purchase re-entry and scopes same-frame action results by world and walker. The owning workshop passes 24 focused host tests, including Clang/GCC sanitizers. These checks cover the updated registry/action fixtures; the other deferred fixture gaps below remain. Existing installable packages and tags are unchanged.
 <!-- /source-only-sync -->
 
 ## Install

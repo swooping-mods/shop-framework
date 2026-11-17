@@ -40,6 +40,11 @@ int main(void){
     }
     frame++;flags=0;assert(!ms_action_once(&gate,definition,frame,&world,&walker,&fresh));assert(charges==2);
     frame++;flags=MS_AVAILABLE;
+    int next_world=3,next_walker=4;
+    assert(ms_action_once(&gate,definition,frame,&world,&walker,&fresh)&&fresh);
+    assert(ms_action_once(&gate,definition,frame,&next_world,&walker,&fresh)&&fresh);
+    assert(ms_action_once(&gate,definition,frame,&next_world,&next_walker,&fresh)&&fresh);
+    assert(charges==5&&grants==5);
     assert(!ms_action_once(&gate,definition,frame,0,&walker,&fresh)&&!fresh);
     assert(!ms_action_once(&gate,definition,frame,&world,0,&fresh)&&!fresh);
     assert(!ms_action_once(&gate,0,frame,&world,&walker,&fresh)&&!fresh);
